@@ -1,0 +1,849 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+body{
+    position: relative;
+    background: #f8f8ff;
+    font-family: "OpenSansRegular", sans-serif;
+}
+.container{
+    max-width: 1450px;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+.nav{
+    position: sticky;
+    z-index: 123456;
+    width: 100%;
+    top: 0;
+    background: rgb(1, 40, 120);
+}
+.desc__link {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 25ch; /* yoki max-width: 25em; */
+  }
+  
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "OpenSansRegular", sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.link img{
+    width: 150px;
+    height: 70px;
+}
+.navigatsiya{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.nav_navigatsiya{
+    display: block;
+    color: rgb(255, 255, 255);
+}
+.Navigatsiya_lupa{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+nav ul li ul{
+    position: absolute;
+    z-index: 999;
+    left: auto;
+    border-radius: 5%;
+    width: 180px;
+    background: rgb(255, 255, 255);
+    color: #1d2127;
+    display: none;
+}
+
+nav  ul  li  a{
+    color: #fff;
+}
+nav ul li ul li{
+    padding: 10px;
+    width: 100%;
+   
+}
+nav ul li ul li ul{
+    left: 180px;
+    top: 0;
+}
+.link img{ 
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff; /* Ko'rinadigan qismning fon rangi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ko'rinadigan qismning chizig'i */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+nav ul li ul a {
+    color: #333; /* Ko'rinadigan qismdagi yozuv rangi */
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul li ul a:hover {
+    background-color: #3498db; /* Ko'rinadigan qismdagi yozuv rangi hover bo'lganda */
+    color: #fff; /* Ko'rinadigan qismdagi yozuv rangi hover bo'lganda */
+}
+
+
+.nav__bg{
+    /* background: url(../img/bg.body.jpg); */
+    max-height: 150vh;
+    overflow: hidden;
+}
+.video img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.video__mediya{
+    z-index: 1;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.section__2{
+    margin-top: 50px;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.section__2-a{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.section__2-img{
+    width: 100%;
+}
+.main{
+    margin-top: 50px;
+}
+.main__h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 28px;
+    color: #1d2127;
+    font-weight: 200;
+    letter-spacing: 0px;
+}
+.main__title{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.main__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    max-width: 300px;
+    gap: 15px;
+    background: #fff;
+}
+.main__img{
+    margin-top: 10px;
+    display: block;
+    border-radius: 10%;
+    max-width: 45vh;
+    max-height: 40vh;
+    overflow: hidden;
+}
+.main__text{
+    color: #777;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+.main__link{
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.section__item3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__4{
+    margin-top: 100px;
+}
+.section__title4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__item4 {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+    /* Boshqa stil xususiyatlari ... */
+    transition: all 0.3s; /* Animatsiyalarga o'tish uchun o'tish vaqtini sozlash */
+}
+
+.section__item4:hover {
+    /* Hover bo'lganda qo'shimcha animatsiyalar */
+    transform: scale(1.1); /* Elementni hover bo'lganda katta ko'rsatish (masalan, asliga nisbatan 110%) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Yoritish ombori qo'shish */
+}
+
+.section__a4{
+    margin: 0 auto;
+    width: 150px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    gap: 30px;
+    
+}
+.section__title4:nth-child(3) img{
+   
+   width: 100px;
+   height: 100px;
+}
+.section__text4{
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.section__5{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.section__img img{
+    max-width: 150px;
+    width: 100%;
+    max-height: 150px;
+}
+.title1{
+    flex-wrap: wrap;
+    margin-top: 60px;
+    display: flex;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+   border-radius: 10px;
+    max-width: 300px;
+    height: 400px;
+    gap: 15px;
+    transition: all 0.3s ease; /* o'zgartirishni animatsiyalashtirish */
+}
+
+.item1:hover {
+    transform: scale(1.0); /* masofani o'zgartirish */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* yorqinlik qo'shish */
+}
+
+.item__1-1{
+    border-radius: 5%;
+}
+.item_2-2{
+    border-radius: 5%;
+}
+.item_1{
+    border-radius: 5%;
+}
+.item__link1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.img__link{
+    pointer-events: none;
+}
+.img__link img{
+    border-radius: 1px;
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+}
+.text__link{
+    color: #c7c7c7;
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    pointer-events: none;
+}
+.h__link{
+    font-family: "OpenSansRegular", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: darkgoldenrod;
+    text-align: center;
+    pointer-events: none;
+}
+.desc__link{
+    color: #1d2127;
+}
+.img__list img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    height: 200px;
+}
+.txt__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.text3{
+    display: block;
+}
+.item4__img img{
+    max-width: 125px;
+    max-height: 125px;
+}
+.section__title5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__item5{
+    width: 300px;
+    height: 300px;
+}
+.section__a5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section__text5 {
+    font-family: "OpenSansRegular", sans-serif;
+    text-align: center;
+    color: #2f3941;
+    font-size: 14px;
+    display: block;
+    height: 130px;
+    padding-top: 10px;
+    width: 200px;
+    transition: color 0.3s; /* Animatsiyalarga o'tish uchun o'tish vaqtini sozlash */
+}
+
+.section__text5:hover {
+    color: rgb(0, 171, 0); /* O'zgartirishni qilmoqchi bo'lgan rangni yozing */
+}
+.section__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    gap: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    padding: 20px;
+    background: rgb(7, 40, 90);
+    margin-top: 50px;
+}
+.img__footer img{
+    width: 220px;
+    height: 100px;
+}
+.footer_text{
+    color: rgb(255, 255, 255);
+}
+.text__footer{
+    color: rgb(255, 255, 255);
+    font-family: "OpenSansRegular", sans-serif;
+}
+.footer__h4{
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.footer__h4 span{
+    font-size: 16px;
+    font-weight: 300;
+}
+.nav__img img{
+    width: 25px;
+    height: 25px;
+}
+.footer__img img {
+    width: 45px;
+    height: 45px;
+    /* Additional styling for the image without hover */
+
+    /* Transition for a smooth effect (optional) */
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer__img img:hover {
+    /* Add styles you want to apply on hover */
+    transform: scale(1.2); /* Example: Scale the image to 120% on hover */
+}
+
+.footer__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column-reverse;
+}
+.h1__tizim{
+    font-size: 28px !important;
+    font-family: "OpenSansBold", sans-serif;
+    margin: 0px 0 20px 0;
+    line-height: 30px !important;
+    color: rgb(1, 40, 115) !important;
+}
+.tizim__h2{
+    padding: 20px;
+    text-align: center;
+    color: #1d2127;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin: 20px;
+}
+.tizim__title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.tizim__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    width: 350px;
+    height: 400px;
+}
+.tizim__img img{
+    width: 250px;
+    height: 120px;
+}
+.tizim__link{
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tizim__text{
+    color: #1d2127;
+    font-size: 20px;
+    font-weight: 500;
+}
+.tizim__item p:hover{
+    color: #0255c8;
+}
+.item__mukofot{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+}
+.link__mukofot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   gap: 25px;
+   text-align: center;
+}
+.h3__mukofot{
+    color: #1d2127;
+    font-size: 20px;
+    font-weight: 700;
+}
+.text__mukofot{
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d2127;
+}
+.img__mukofot img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.title__mukofot{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+.img__grant img{
+    display: flex;
+    align-items: start;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.hujjat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    padding: 15px;
+    background: #fff;
+}
+.icon__text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.img__page img{
+    width: 70px;
+    height: 70px;
+}
+.hujjat__box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.h3__text{
+    color: #1d2127;
+    font-size: 25px;
+}
+.list_rahbariyat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title__rax {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15); /* Creative box shadow */
+}
+
+.rasm__rax img{
+    max-width: 300px;
+    max-height: 250px;
+}
+.text__rax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.e__mail{
+    color: #0255c8;
+}
+.h3__rax{
+    color: #0255c8;
+    font-family: "OpenSansRegular", sans-serif;
+}
+#loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    z-index: 999;
+    transition: opacity 0.5s ease;
+  }
+.boxes {
+    --size: 32px;
+    --duration: 800ms;
+    height: calc(var(--size) * 2);
+    width: calc(var(--size) * 3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    margin-top: calc(var(--size) * 1.5 * -1);
+    transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+
+  }
+  
+  
+  .boxes .box {
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform-style: preserve-3d;
+  }
+  
+  .boxes .box:nth-child(1) {
+    transform: translate(100%, 0);
+    -webkit-animation: box1 var(--duration) linear infinite;
+    animation: box1 var(--duration) linear infinite;
+  }
+  
+  .boxes .box:nth-child(2) {
+    transform: translate(0, 100%);
+    -webkit-animation: box2 var(--duration) linear infinite;
+    animation: box2 var(--duration) linear infinite;
+  }
+  
+  .boxes .box:nth-child(3) {
+    transform: translate(100%, 100%);
+    -webkit-animation: box3 var(--duration) linear infinite;
+    animation: box3 var(--duration) linear infinite;
+  }
+  
+  .boxes .box:nth-child(4) {
+    transform: translate(200%, 0);
+    -webkit-animation: box4 var(--duration) linear infinite;
+    animation: box4 var(--duration) linear infinite;
+  }
+  
+  .boxes .box > div {
+    --background: #5C8DF6;
+    --top: auto;
+    --right: auto;
+    --bottom: auto;
+    --left: auto;
+    --translateZ: calc(var(--size) / 2);
+    --rotateY: 0deg;
+    --rotateX: 0deg;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    top: var(--top);
+    right: var(--right);
+    bottom: var(--bottom);
+    left: var(--left);
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+  }
+  
+  .boxes .box > div:nth-child(1) {
+    --top: 0;
+    --left: 0;
+  }
+  
+  .boxes .box > div:nth-child(2) {
+    --background: #145af2;
+    --right: 0;
+    --rotateY: 90deg;
+  }
+  
+  .boxes .box > div:nth-child(3) {
+    --background: #447cf5;
+    --rotateX: -90deg;
+  }
+  
+  .boxes .box > div:nth-child(4) {
+    --background: #DBE3F4;
+    --top: 0;
+    --left: 0;
+    --translateZ: calc(var(--size) * 3 * -1);
+  }
+  
+  @-webkit-keyframes box1 {
+    0%, 50% {
+      transform: translate(100%, 0);
+    }
+  
+    100% {
+      transform: translate(200%, 0);
+    }
+  }
+  
+  @keyframes box1 {
+    0%, 50% {
+      transform: translate(100%, 0);
+    }
+  
+    100% {
+      transform: translate(200%, 0);
+    }
+  }
+  
+  @-webkit-keyframes box2 {
+    0% {
+      transform: translate(0, 100%);
+    }
+  
+    50% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+  
+  @keyframes box2 {
+    0% {
+      transform: translate(0, 100%);
+    }
+  
+    50% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+  
+  @-webkit-keyframes box3 {
+    0%, 50% {
+      transform: translate(100%, 100%);
+    }
+  
+    100% {
+      transform: translate(0, 100%);
+    }
+  }
+  
+  @keyframes box3 {
+    0%, 50% {
+      transform: translate(100%, 100%);
+    }
+  
+    100% {
+      transform: translate(0, 100%);
+    }
+  }
+  
+  @-webkit-keyframes box4 {
+    0% {
+      transform: translate(200%, 0);
+    }
+  
+    50% {
+      transform: translate(200%, 100%);
+    }
+  
+    100% {
+      transform: translate(100%, 100%);
+    }
+  }
+  
+  @keyframes box4 {
+    0% {
+      transform: translate(200%, 0);
+    }
+  
+    50% {
+      transform: translate(200%, 100%);
+    }
+  
+    100% {
+      transform: translate(100%, 100%);
+    }
+  }
+/* .footer__title:nth-child(1)  .footer__img{
+    width: 70px;
+    height: 70px;
+} */
