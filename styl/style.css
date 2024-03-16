@@ -14,7 +14,7 @@ body{
 .container{
     max-width: 1450px;
     width: 100%;
-    padding: 15px;
+    padding: 6px;
     margin: 0 auto;
 }
 .nav{
@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: "Times New Roman", sans-serif;
 }
 .title{
     display: flex;
@@ -44,8 +44,8 @@ body{
     gap: 30px;
 }
 .link img{
-    width: 150px;
-    height: 70px;
+    width: 300px;
+    height: 80px;
 }
 .navigatsiya{
     display: flex;
@@ -285,7 +285,7 @@ nav ul li ul a:hover {
     border-radius: 10%;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 25px;
 }
 .item1{
     display: flex;
@@ -293,16 +293,17 @@ nav ul li ul a:hover {
     align-items: center;
     padding: 15px;
     background-color: #fff;
-   border-radius: 10px;
+    border-radius: 10px;
     max-width: 300px;
     height: 400px;
     gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.15); /* Creative box shadow */
     transition: all 0.3s ease; /* o'zgartirishni animatsiyalashtirish */
 }
 
 .item1:hover {
     transform: scale(1.0); /* masofani o'zgartirish */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* yorqinlik qo'shish */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 1.1); /* yorqinlik qo'shish */
 }
 
 .item__1-1{
@@ -428,7 +429,7 @@ nav ul li ul a:hover {
     margin-top: 50px;
 }
 .img__footer img{
-    width: 220px;
+    width: 320px;
     height: 100px;
 }
 .footer_text{
